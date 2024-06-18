@@ -49,7 +49,6 @@ const initialData = [
 
 
 const App = () => {
-  // Hàm renderItem để hiển thị từng phần tử trong danh sách
   const renderItem = ({ item }) => (
   <View style={styles.item}>
     <View style={styles.iconContainer}>
@@ -68,7 +67,6 @@ const App = () => {
 );
 
 
-  // Hàm keyExtractor để lấy giá trị key của từng phần tử
   const keyExtractor = (item) => item.id;
 
   return (
@@ -117,16 +115,6 @@ const styles = StyleSheet.create({
     fontSize: 12,
     color: '#aaa',
   },
-  // header: {
-  //   fontSize: 24,
-  //   textAlign: 'center',
-  //   marginVertical: 10,
-  // },
-  // separator: {
-  //   height: 1,
-  //   backgroundColor: '#ccc',
-  //   marginHorizontal: 16,
-  // },
 });
 
 
